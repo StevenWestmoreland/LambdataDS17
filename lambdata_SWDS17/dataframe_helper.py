@@ -130,6 +130,20 @@ class State_Standardization():
         }
         return abbr_to_full.get(AB.upper())
 
-def report_missing_values(df):
-    '''Print a pretty report of missing values'''
-    print('Need to write code here.')
+def report_missing_values(df, threshold=0.1):
+    '''
+    This function returns missing values as a percentage of a row's features.
+    Args:
+        df (Numpy array or dataframe): Object to be searched for missing values.
+        threshold (float or int): Percentage of missing values required for rows in return.
+    Returns:
+        The rows where missing value percentage is higher than the threshold.
+    '''
+    nan_cols=[]
+    for column in df:
+      if df[column].isna().mean() >= threshold:
+        nan_cols.append(df[column].name)
+      else:
+        pass
+    print('Columns containing missing values:')
+    print(nan_cols)
