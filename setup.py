@@ -9,7 +9,7 @@ REQUIRED = [
     'pandas'
 ]
 
-with open("README.md', 'r') as file:
+with open("README.md", 'r') as file:
     LONG_DESCRIPTION = file.read()
 
 setuptools.setup(
