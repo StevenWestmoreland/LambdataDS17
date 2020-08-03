@@ -20,7 +20,7 @@ setuptools.setup(
     long_description=LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
     url='https://github.com/StevenWestmoreland/LambdataDS17',
-    packages+setuptools.find_Packages(),
+    packages=setuptools.find_Packages(),
     python_requires='>==3.7',
     install_requires=REQUIRED,
     classifiers=[
