@@ -9,7 +9,7 @@ with open("README.md", 'r') as file:
 
 setuptools.setup(
     name='lambdata-SWDS17',
-    version='0.0.5',
+    version='0.0.6',
     author='StevenWestmoreland',
     description='A collection of Data Science helper functions',
     long_description=LONG_DESCRIPTION,
